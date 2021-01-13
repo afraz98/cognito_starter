@@ -1,5 +1,6 @@
 package com.application.espble;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +14,12 @@ import com.amplifyframework.core.Amplify;
 public class RegisterActivity extends Activity {
     private Button Submit;
     private EditText Email, Password, Name, ConfirmPassword;
+
+    private void confirmRegistration(){
+        final Intent intent = new Intent(this, LoginActivity.class);
+        intent.putExtra("USER", Name.getText().toString());
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +37,10 @@ public class RegisterActivity extends Activity {
             public void onClick(View v) {
                 //Handle user registration
                 Amplify.Auth.signUp(
-                        Name.getText().toString(),
+                        Email.getText().toString(),
                         Password.getText().toString(),
-                        AuthSignUpOptions.builder().userAttribute(AuthUserAttributeKey.email(), Email.getText().toString()).build(),
-                        result -> Log.i("AuthQuickStart", "Result: " + result.toString()),
+                        AuthSignUpOptions.builder().userAttribute(AuthUserAttributeKey.name(), Name.getText().toString()).build(),
+                        result -> confirmRegistration(),
                         error -> Log.e("AuthQuickStart", "Sign up failed", error)
                 );
             }

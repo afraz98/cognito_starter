@@ -25,5 +25,4 @@
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".BodyActivity"></activity>
     </application>
-
 </manifest>
