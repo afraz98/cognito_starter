@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "espble0caa0015": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
