@@ -1,7 +1,7 @@
 # cognito_starter
 
 The following repository contains a starter project for AWS Cognito authentication through AWS Amplify. Developers may create Cognito User Pools and link their authentication 
-by editing awsconfiguration.json under app/res/raw.
+by [following this guide](https://docs.amplify.aws/lib/project-setup/use-existing-resources/q/platform/android).
 
 ## Introduction 
 
