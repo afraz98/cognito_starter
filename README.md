@@ -17,6 +17,17 @@ Note: Please refer to the [AWS Amplify documentation]https://docs.amplify.aws/li
 ### Android Studio Activities
 
 [StartActivity](https://github.com/afraz98/cognito_starter/blob/master/app/src/main/res/layout/activity_main.xml)
+
+![Start](https://i.imgur.com/7sDSnsl.png)
+
 [LoginActivity](https://github.com/afraz98/cognito_starter/blob/master/app/src/main/res/layout/login.xml)
+
+![Login](https://i.imgur.com/1SUQwpI.png)
+
 [RegisterActivity](https://github.com/afraz98/cognito_starter/blob/master/app/src/main/res/layout/register.xml)
+
+![Register](https://i.imgur.com/jdVAx5T.png)
+
 [BodyActivity](https://github.com/afraz98/cognito_starter/blob/master/app/src/main/res/layout/body.xml)
+
+![Body](https://i.imgur.com/SzDBSBw.png)
